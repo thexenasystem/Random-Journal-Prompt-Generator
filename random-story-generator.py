@@ -1,5 +1,6 @@
 # Importing random module
 import random
+import string
 
 # Storing random data into lists to create story.
 when = ['A long time ago', 'Yesterday', 'Before you were born', 'In future', 'Before Thanos arrived']
