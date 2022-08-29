@@ -20,5 +20,6 @@ grief = ["grief prompt one"], ["grief prompt two"], ["grief prompt three"], ["gr
 mid_day = [["noon prompt one"], ["noon prompt two"], ["noon prompt three"], ["noon prompt four"], ["noon prompt five"]]
 confidence = [["conf prompt one"], ["conf prompt two"], ["conf prompt three"], ["conf prompt four"], ["conf prompt five"]]
 
+#list of genres with prompt lists for each genre
 journal_prompt_genres = [[daily],
 [weekly], [monthly], [end_of_year], [depression], [anxiety], [gratitude], [self_development], [self_love], [morning], [evening], [grief], [mid_day], [confidence]]
