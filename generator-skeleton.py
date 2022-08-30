@@ -1,6 +1,6 @@
+import random
 import string
 
-#og code
 journal_prompts = [["this is prompt one"], 
     ["this is prompt two"], 
     ["look! it's the third prompt!"], 
@@ -19,3 +19,19 @@ journal_prompts = [["this is prompt one"],
     ["all of the journal prompts"],
     ["can't decide if this should be in it's own file or the main file"],
     ["chips are really good"]]
+
+#def get_new_prompt():
+    #selected_prompt = random.choice(journal_prompts)
+    #return selected_prompt
+
+print("Would you like a new journal prompt? Push Y for yes and N for no.")
+response = input()
+
+if response is 'Y':
+    print(random.choice(journal_prompts))
+
+elif response is 'N':
+    print("You have selected no.")
+
+elif response != 'Y' and response != 'N':
+    print('Error. Incorrect input. Please hit "Y" for yes and "N" for no.')
