@@ -1,3 +1,4 @@
+import prompt-list.py #fix this
 import tkinter
 
 from tkinter import *
@@ -8,6 +9,8 @@ top = tkinter.Tk()
 
 import random
 import string
+
+#prompt-list.py.journal_prompts should be what's imported in
 
 journal_prompts = [["this is prompt one"], 
     ["this is prompt two"], 
