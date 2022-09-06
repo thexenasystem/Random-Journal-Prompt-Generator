@@ -1,3 +1,11 @@
+import tkinter
+
+from tkinter import *
+from tkinter import ttk
+from tkinter import messagebox
+
+top = tkinter.Tk()
+
 import random
 import string
 
@@ -35,3 +43,28 @@ elif response is 'N':
 
 elif response != 'Y' and response != 'N':
     print('Error. Incorrect input. Please hit "Y" for yes and "N" for no.')
+
+#button to request a new random prompt
+
+top = Tk()
+top.geometry("100x100")
+def getNewPrompt():
+   msg = messagebox.showinfo(random.choice(journal_prompts))
+
+B = Button(top, text = "New Journal Prompt", command = getNewPrompt)
+B.place(x = 50,y = 50)
+top.mainloop()
+
+#text field displaying the new prompt
+root = Tk()
+text = Text(root)
+text.insert(INSERT, getNewPrompt)
+text.pack()
+
+text.tag_add("here", "1.0", "1.4") #change this placement, needs to fit the size of any prompt
+text.tag_add("start", "1.8", "1.13") #change this placement, needs to fit the size of any prompt
+text.tag_config("here", background = "white", foreground = "black")
+text.tag_config("start", background = "white", foreground = "black")
+root.mainloop()
+
+top.mainloop()
