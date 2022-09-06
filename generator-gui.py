@@ -1,13 +1,12 @@
 import tkinter
 
 from tkinter import *
-from tkinter.ttk import *
+from tkinter import ttk
+from tkinter import messagebox
 
 top = tkinter.Tk()
 
 # Code to add widgets will go here...
-
-top.mainloop()
 
 #button to request a new random prompt
 
