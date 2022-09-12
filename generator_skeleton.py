@@ -47,8 +47,31 @@ elif response is 'N':
 elif response != 'Y' and response != 'N':
     print('Error. Incorrect input. Please hit "Y" for yes and "N" for no.')
 
-#button to request a new random prompt
+#code outline from tkinter docs
+root = Tk()
+root.title("Random Journal Prompt")
 
+mainframe = ttk.Frame(root, padding="3 3 12 12")
+mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
+root.columnconfigure(0, weight=1)
+root.rowconfigure(0, weight=1)
+
+#entry widget. need to modify
+feet = StringVar()
+feet_entry = ttk.Entry(mainframe, width=7, textvariable=feet)
+feet_entry.grid(column=2, row=1, sticky=(W, E))
+
+#other label widgets. need to modify
+meters = StringVar()
+ttk.Label(mainframe, textvariable=meters).grid(column=2, row=2, sticky=(W, E))
+
+ttk.Button(mainframe, text="Calculate", command=calculate).grid(column=3, row=3, sticky=W)
+
+ttk.Label(mainframe, text="feet").grid(column=3, row=1, sticky=W)
+ttk.Label(mainframe, text="is equivalent to").grid(column=1, row=2, sticky=E)
+ttk.Label(mainframe, text="meters").grid(column=3, row=2, sticky=W)
+
+#button to request a new random prompt
 top = Tk()
 top.geometry("100x100")
 def getNewPrompt():
