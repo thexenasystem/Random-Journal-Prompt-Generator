@@ -1,6 +1,5 @@
 import string
 
-#og code
 journal_prompts = [["this is prompt one"], 
     ["this is prompt two"], 
     ["look! it's the third prompt!"], 
