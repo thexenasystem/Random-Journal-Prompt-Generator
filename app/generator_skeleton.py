@@ -1,11 +1,9 @@
-from prompt_list import journal_prompts
+
 import tkinter
 
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
-
-top = tkinter.Tk()
 
 import random
 import string
@@ -31,66 +29,20 @@ journal_prompts = [["this is prompt one"],
     ["can't decide if this should be in it's own file or the main file"],
     ["chips are really good"]]
 
-#def get_new_prompt():
-    #selected_prompt = random.choice(journal_prompts)
-    #return selected_prompt
+def prompt_window: (
+    """Creates the prompt window and displays random journal prompt."""
+    print("Would you like a new journal prompt? Push Y for yes and N for no.")
+    response = input()
 
-print("Would you like a new journal prompt? Push Y for yes and N for no.")
-response = input()
+    if response is 'Y':
+        print(random.choice(journal_prompts))
+    elif response is 'N':
+        print("You have selected no.")
+    elif response != 'Y' and response != 'N':
+        print('Error. Incorrect input. Please hit "Y" for yes and "N" for no.')
+}
 
-if response is 'Y':
-    print(random.choice(journal_prompts))
-
-elif response is 'N':
-    print("You have selected no.")
-
-elif response != 'Y' and response != 'N':
-    print('Error. Incorrect input. Please hit "Y" for yes and "N" for no.')
-
-#code outline from tkinter docs
-root = Tk()
-root.title("Random Journal Prompt")
-
-mainframe = ttk.Frame(root, padding="3 3 12 12")
-mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
-root.columnconfigure(0, weight=1)
-root.rowconfigure(0, weight=1)
-
-#entry widget. need to modify
-feet = StringVar()
-feet_entry = ttk.Entry(mainframe, width=7, textvariable=feet)
-feet_entry.grid(column=2, row=1, sticky=(W, E))
-
-#other label widgets. need to modify
-meters = StringVar()
-ttk.Label(mainframe, textvariable=meters).grid(column=2, row=2, sticky=(W, E))
-
-ttk.Button(mainframe, text="Calculate", command=calculate).grid(column=3, row=3, sticky=W)
-
-ttk.Label(mainframe, text="feet").grid(column=3, row=1, sticky=W)
-ttk.Label(mainframe, text="is equivalent to").grid(column=1, row=2, sticky=E)
-ttk.Label(mainframe, text="meters").grid(column=3, row=2, sticky=W)
-
-#button to request a new random prompt
-top = Tk()
-top.geometry("100x100")
 def getNewPrompt():
+    """Returns a new random journal prompt."""
    msg = messagebox.showinfo(random.choice(journal_prompts))
 
-B = Button(top, text = "New Journal Prompt", command = getNewPrompt)
-B.place(x = 50,y = 50)
-top.mainloop()
-
-#text field displaying the new prompt
-root = Tk()
-text = Text(root)
-text.insert(INSERT, getNewPrompt)
-text.pack()
-
-text.tag_add("here", "1.0", "1.4") #change this placement, needs to fit the size of any prompt
-text.tag_add("start", "1.8", "1.13") #change this placement, needs to fit the size of any prompt
-text.tag_config("here", background = "white", foreground = "black")
-text.tag_config("start", background = "white", foreground = "black")
-root.mainloop()
-
-top.mainloop()
