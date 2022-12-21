@@ -1,5 +1,5 @@
 from app.prompt_list import journal_prompts
-import tkinter
+import tkinter as tk
 from tkinter import Canvas, Label, Tk
 from tkinter import *
 from tkinter import messagebox
@@ -7,10 +7,9 @@ from tkinter import messagebox
 import random
 import string
 
-class Generator():
+class Generator:
 
-    #WIDTH =
-    #HEIGHT =
+#following tk tutorial https://www.tutorialsteacher.com/python/create-gui-using-tkinter-python
 
     #def init?
     def generator_window(self):
@@ -20,14 +19,12 @@ class Generator():
         """
 
         #TODO:code to initiate tkinter window
-        self.root = Tk()
-        self.root.title("Random Journal Prompt Generator")
+        window=Tk()
+        #TODO: add widgets here
 
-        self.canvas = Canvas (
-            self.root,
-            width=Generator.WIDTH,
-            height=Generator.HEIGHT,)
-        self.canvas.pack()
+        window.title('Random Journal Prompt Generator')
+        window.geometry("300x200+10+20")
+        window.mainloop()
 
         #TODO: open with a prompt automatically displayed
 
