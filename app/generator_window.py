@@ -27,20 +27,10 @@ class Generator:
         window.mainloop()
 
         #TODO: open with a prompt automatically displayed
+        #text of randomly generated journal prompt
 
-        #for if the user wants a different prompt
-        #TODO: change this from a question to just a button to push for a new prompt
-        print("Would you like a new journal prompt? Push Y for yes and N for no.")
-        response = input()
-
-        #TODO: delete this if statement
-        if response is 'Y':
-            print(random.choice(journal_prompts))
-        elif response is 'N':
-            print("You have selected no.")
-        elif response != 'Y' and response != 'N':
-            print('Error. Incorrect input. Please hit "Y" for yes and "N" for no.')
-
+        #TODO: make a button to get a new random journal prompt
+        #button to be selected to return new journal prompt
 
     def getNewPrompt(self):
         """Returns a new random journal prompt."""
