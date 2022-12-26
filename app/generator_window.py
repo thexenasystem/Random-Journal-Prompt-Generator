@@ -10,11 +10,16 @@ import string
 class Generator:
 
 #following tk tutorial https://www.tutorialsteacher.com/python/create-gui-using-tkinter-python
+#^used as much as possible, now going off of https://www.askpython.com/python-modules/tkinter/random-facts-machine
 
     #def init?
 
     window=Tk()
     #TODO: add widgets here
+    #proposed widget:
+    # frame 1: label to display current journal_prompt - use label.place to center/place or label.grid
+    # or text instead of label
+    # frame 2: button to select new journal_prompt
 
     # TODO: open with a prompt automatically displayed
     # text/messagebox of randomly generated journal prompt - NOT label, but maybe also label
