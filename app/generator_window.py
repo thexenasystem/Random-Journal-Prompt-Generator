@@ -12,7 +12,7 @@ class Generator:
 #following tk tutorial https://www.tutorialsteacher.com/python/create-gui-using-tkinter-python
 #^used as much as possible, now going off of https://www.askpython.com/python-modules/tkinter/random-facts-machine
 
-    def get_new_prompt(self):
+    def get_new_prompt_tk():
         """Returns a new random journal prompt."""
 
         txt1.config(state='normal')

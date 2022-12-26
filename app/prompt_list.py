@@ -18,3 +18,9 @@ journal_prompts = [["this is prompt one"],
     ["all of the journal prompts"],
     ["can't decide if this should be in it's own file or the main file"],
     ["chips are really good"]]
+
+def get_new_journal_prompt(self):
+    """Returns a new random journal prompt."""
+    #part through dictionary
+    #select random dictionary entry
+    #return selected entry
