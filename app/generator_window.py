@@ -15,25 +15,26 @@ class Generator:
     #def init?
 
     window=Tk()
-    #TODO: add widgets here
-    #proposed widget:
-    # frame 1: label to display current journal_prompt - use label.place to center/place or label.grid
-    # or text instead of label
-    # frame 2: button to select new journal_prompt
-
-    # TODO: open with a prompt automatically displayed
-    # text/messagebox of randomly generated journal prompt - NOT label, but maybe also label
-    # print(journal_prompts)
-    # label = tk.Label(text="Hello, Tkinter") but instead text = journal_prompts ???
-
-    # TODO: make a button to get a new random journal prompt
-    # button to be selected to return new journal prompt
-    btn=Button(window, text="Get New Prompt", fg='blue')
-    btn.place(x=80, y=150)
-
+    window.geometry("700x250")
+    #window.config(big="#E67E22
+    window.resizable(width=False, height=False)
     window.title('Random Journal Prompt Generator')
-    window.geometry("300x200+10+20")
-    window.mainloop()
+    window.mainloop() # is this needed?
+
+    #labeling letting the user know what the displayed text is
+    l1 = tk.Label(window,text="Random Journal Prompt:", font=("Arial", 25), fig="Black", bg="White")
+
+    # button to be selected to return new journal prompt
+    btn1=Button(window, text="Get New Prompt", font="Arial", fg='blue')
+    #btn1.place(x=80, y=150)
+
+    #text displaying the random journal_prompt
+    txt1 = tk.Text(window,width=60, height=2, font=("Arial", 15), state='disabled', bg="purple")
+
+
+
+    l1.pack()
+    btn1.pack()
 
     def getNewPrompt(self):
         """Returns a new random journal prompt."""
