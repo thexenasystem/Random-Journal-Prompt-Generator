@@ -12,25 +12,23 @@ class Generator:
 #following tk tutorial https://www.tutorialsteacher.com/python/create-gui-using-tkinter-python
 
     #def init?
-    def generator_window(self):
-        """
-        Creates the prompt window and displays a random journal prompt.
-        along with a button to get a new random journal prompt.
-        """
 
-        #TODO:code to initiate tkinter window
-        window=Tk()
-        #TODO: add widgets here
+    window=Tk()
+    #TODO: add widgets here
 
-        window.title('Random Journal Prompt Generator')
-        window.geometry("300x200+10+20")
-        window.mainloop()
+    # TODO: open with a prompt automatically displayed
+    # text/messagebox of randomly generated journal prompt - NOT label, but maybe also label
+    # print(journal_prompts)
+    # label = tk.Label(text="Hello, Tkinter") but instead text = journal_prompts ???
 
-        #TODO: open with a prompt automatically displayed
-        #text of randomly generated journal prompt
+    # TODO: make a button to get a new random journal prompt
+    # button to be selected to return new journal prompt
+    btn=Button(window, text="Get New Prompt", fg='blue')
+    btn.place(x=80, y=150)
 
-        #TODO: make a button to get a new random journal prompt
-        #button to be selected to return new journal prompt
+    window.title('Random Journal Prompt Generator')
+    window.geometry("300x200+10+20")
+    window.mainloop()
 
     def getNewPrompt(self):
         """Returns a new random journal prompt."""
