@@ -1,4 +1,3 @@
-import string
 def journal_prompts() : {
     ["look! it's the third prompt!"], 
     ["and this is the fourth prompt"],
