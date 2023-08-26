@@ -1,7 +1,5 @@
 import string
-
-journal_prompts = [["this is prompt one"], 
-    ["this is prompt two"], 
+def journal_prompts() : {
     ["look! it's the third prompt!"], 
     ["and this is the fourth prompt"],
     ["gonna make so many promppttsssssss"],
@@ -17,10 +15,5 @@ journal_prompts = [["this is prompt one"],
     ["even more journal prompts"],
     ["all of the journal prompts"],
     ["can't decide if this should be in it's own file or the main file"],
-    ["chips are really good"]]
-
-def get_new_journal_prompt(self):
-    """Returns a new random journal prompt."""
-    #part through dictionary
-    #select random dictionary entry
-    #return selected entry
+    ["chips are really good"]
+    }

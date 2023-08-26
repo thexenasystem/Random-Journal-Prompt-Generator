@@ -28,7 +28,7 @@ class Generator:
     window.title('Random Journal Prompt Generator')
 
     #labeling letting the user know what the displayed text is
-    l1 = tk.Label(window,text="Random Journal Prompt:", font=("Arial", 25), fig="Black", bg="White")
+    l1 = tk.Label(window,text="Random Journal Prompt:", font=("Arial", 25), fg="Black", bg="White")
 
     # button to be selected to return new journal prompt
     btn1=Button(window, text="Get New Prompt", font="Arial", fg='blue')
