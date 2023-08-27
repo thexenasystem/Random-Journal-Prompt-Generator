@@ -1,4 +1,4 @@
-def journal_prompts() : {
+journal_prompts: {
     ["look! it's the third prompt!"], 
     ["and this is the fourth prompt"],
     ["gonna make so many promppttsssssss"],

@@ -1,4 +1,5 @@
 from app.prompt_list import journal_prompts
+from app.get_new_prompt import journal_prompts
 import tkinter as tk
 from tkinter import Canvas, Label, Tk
 from tkinter import *
