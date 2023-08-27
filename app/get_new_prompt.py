@@ -1,6 +1,5 @@
 from prompt_list import journal_prompts
 import random
-import string
 
 def get_new_journal_prompt(journal_prompts):
     """Returns a new random journal prompt."""
