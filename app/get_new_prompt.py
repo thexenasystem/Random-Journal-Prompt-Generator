@@ -7,4 +7,5 @@ def get_new_journal_prompt(journal_prompts):
     
     #shuffle prompts list
     random.shuffle(journal_prompts)
-   #TODO: return [0] from list after shuffling
+    #TODO: return [0] from list after shuffling
+    return journal_prompts[0]
