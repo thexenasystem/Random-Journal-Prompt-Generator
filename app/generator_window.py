@@ -18,8 +18,8 @@ class Generator:
 
         txt1.config(state='normal')
         txt1.delete('1.0', tk.END)
-        f = journal_prompts.getNewPrompt(False) #this example comes from premade module, figure it out different for our own function
-        txt1.insert(tk.END, f)
+        new_prompt = print(get_new_journal_prompt)
+        txt1.insert(tk.END, new_prompt)
         txt1.config(state='disabled')
 
     window=Tk()
