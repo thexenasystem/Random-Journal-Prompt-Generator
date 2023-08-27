@@ -1,8 +1,10 @@
-import string
 from prompt_list import journal_prompts
+import random
+import string
 
-def get_new_journal_prompt(self):
+def get_new_journal_prompt(journal_prompts):
     """Returns a new random journal prompt."""
-    #TODO: parse through dictionary
-    #TODO: select random dictionary entry
-    #TODO: return selected entry
+    
+    #shuffle prompts list
+    random.shuffle(journal_prompts)
+   #TODO: return [0] from list after shuffling
