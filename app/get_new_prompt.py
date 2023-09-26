@@ -8,3 +8,5 @@ def get_new_journal_prompt(journal_prompts):
     random.sample(journal_prompts, len(journal_prompts))
     #TODO: return [0] from list after shuffling
     return journal_prompts[0]
+
+print(journal_prompts[0])
