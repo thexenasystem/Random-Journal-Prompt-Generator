@@ -27,7 +27,7 @@ prompt_text.pack()
 text_widget.pack()
 button1.pack()
 
-text_widget.insert("1:0", new_prompt)
+#text_widget.insert("1:0", new_prompt)
 
 #TODO: button function text_widget.delete to clear the box, then display next prompt
 
