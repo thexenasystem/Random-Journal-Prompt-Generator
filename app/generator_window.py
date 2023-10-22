@@ -12,19 +12,27 @@ from kivy.uix.image import Image
 from kivy.uix.label import Label
 
 class MainApp(App):
+    #building of main layout
     def build(self):
-        layout = BoxLayout(padding=10)
+        main_layout = BoxLayout(padding=10)
 
+        main_layout.add_widget(button)
         button = Button(text='New Journal Prompt')
-        #below is for a separate press button function
-        #button.bind(on_press=self.on_press_button)
+        button.bind(on_press=self.on_press_button)
 
+        main_layout.addwidget(label)
         label = Label_text='Random Journal Prompt Generator'
 
-        # how to return layout, button, label, etc all together?
-        
-#save string returned from get_new_prompt()
-new_prompt = get_new_journal_prompt
+        return main_layout
+    
+    #event for pressing the button to get a new prompt
+    def on_press_button_(self, instance):
+
+        #save string returned from get_new_prompt()
+        new_prompt = get_new_journal_prompt(journal_prompts)
+
+        print(new_prompt)
+
 
 if __name__ == "__main__":
     app = MainApp()
