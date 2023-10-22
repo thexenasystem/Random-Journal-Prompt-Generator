@@ -1,41 +1,33 @@
 from get_new_prompt import get_new_journal_prompt
-import tkinter as tk
-from tkinter import *
 from prompt_list import journal_prompts
 
-
+import kivy
 import random
 import string 
 
-#def main() :
+from kivy.app import App
+from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.button import Button
+from kivy.uix.image import Image
+from kivy.uix.label import Label
 
-#create window
-window=tk.Tk()
+class MainApp(App):
+    def build(self):
+        layout = BoxLayout(padding=10)
 
+        button = Button(text='New Journal Prompt')
+        #below is for a separate press button function
+        #button.bind(on_press=self.on_press_button)
+
+        label = Label_text='Random Journal Prompt Generator'
+
+        # how to return layout, button, label, etc all together?
+        
 #save string returned from get_new_prompt()
 new_prompt = get_new_journal_prompt
 
-#create text widget
-text_widget = Text( window, height = 5, width = 52)
-
-#create label
-prompt_text = tk.Label(text="Random Journal Prompt:")
-
-#prompt to be displayed
-Prompt = get_new_journal_prompt(journal_prompts)
-#create button to get next random prompt
-button1 = Button(window, text = "Next")
-
-prompt_text.pack()
-text_widget.pack()
-button1.pack()
-
-text_widget.insert(tk.END, Prompt)
-
-#TODO: button function text_widget.delete to clear the box, then display next prompt
-
-window.mainloop()
-
-#if __name__ == "__main__":
-    #main()
+if __name__ == "__main__":
+    app = MainApp()
+    app.run()
+    
 
