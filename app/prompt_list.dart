@@ -1,5 +1,5 @@
 List ? journal_prompts = List.filled(16, null, growable: false) [
-  ///TO DO: wtf is the error below of can't assign string to int for first object?
+  //TO DO: wtf is the error below of can't assign string to int for first object?
     journal_prompts[0]="DDDDD JJJJJJ KHALLEEDDDD ANOTHER ONE";
     journal_prompts[1]="gonna make so many promppttsssssss";
     journal_prompts[2]="this list is gonna be huge";
@@ -16,4 +16,4 @@ List ? journal_prompts = List.filled(16, null, growable: false) [
     journal_prompts[13]="can't decide if this should be in it's own file or the main file";
     journal_prompts[14]="chips are really good";
     journal_prompts[15]="look! it's another prompt!"
-]
+];
