@@ -1,4 +1,4 @@
-var journal_prompts = [
+final journal_prompts = <String> [
      "gonna make so many promppttsssssss",
      "this list is gonna be huge",
      "but not in a trump way",
