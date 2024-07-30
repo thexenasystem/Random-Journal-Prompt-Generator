@@ -1,18 +1,12 @@
-import journal_prompts
+//TODO this isn't working
+import prompt_list from journal_prompts;
+
+import 'dart:math';
 
 void get_new_journal_prompt(journal_prompts) {
   //returns random new journal prompt
   // TODO return random object from journal prompt list
-  //shuffle journal_prompts elements
-      #shuffle prompts list
-    if string = old prompt {
-        shuffle
-        /*AND/OR*/
-        skip
-    }
-    #TODO: return random(journal_prompts[0])  from list after shuffling
-  //return random object from array
-
-  //save returned object to var new_journal_prompt
-  return new_journal_prompt
+  int randomIndex = Random().nextInt(prompt_list.length);
+  
+  print(prompt_list[randomIndex]);
 };
