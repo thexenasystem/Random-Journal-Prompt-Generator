@@ -1,7 +1,6 @@
-//TODO this isn't working
-import prompt_list from journal_prompts;
-
 import 'dart:math';
+//TODO how to import this list properly
+import prompt_list from journal_prompts;
 
 void get_new_journal_prompt(journal_prompts) {
   //returns random new journal prompt
